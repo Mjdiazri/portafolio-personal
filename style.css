@@ -3,3 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*SECCIONES*/
+.intro-div-main, .about-div-main{
+    display: flex;
+    flex-direction: column;
+}
+
+/* SECCION 1 */
+.intro-div-main{
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    gap: 5px;    
+}
+
+.section-icon{
+    font-size: 30px;
+    margin-left: 30px;
+    color: black;
+}
+
+.card-img-top{
+    margin-top: 15px;
+    width: 100%; 
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* SECCION 2 */
+.about-div-main{
+    margin-top: 50px;
+    max-width: 70%;
+    align-items: end;
+    text-align:justify;
+    gap: 15px;
+}
+
+p.about{
+  margin-right: 90px;
+}
+
+
