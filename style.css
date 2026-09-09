@@ -5,7 +5,7 @@
 }
 
 /*SECCIONES*/
-.intro-div-main, .about-div-main{
+.intro-div-main, .about-div-main, .projects-div-main{
     display: flex;
     flex-direction: column;
 }
@@ -32,17 +32,37 @@
     border-radius: 50%;
 }
 
-/* SECCION 2 */
-.about-div-main{
+/* SECCION 2, 3 */
+.about-div-main, .projects-div-main{
     margin-top: 50px;
     max-width: 70%;
     align-items: end;
     text-align:justify;
-    gap: 15px;
+    gap: 25px;
 }
 
 p.about{
   margin-right: 90px;
 }
 
+/*SECCION 3 -cards*/
+.card-project{
+    display: flex;
+    flex-direction: row;
+}
+
+.project-icon{
+    padding: 16px 10px 10px 10px;
+    font-size: 20px;
+}
+
+.projects-tech{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 20px;
+    font-size: 25px;
+    
+
+}
 
