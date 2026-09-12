@@ -12,8 +12,8 @@
     <header>
         <nav class="navbar navbar-expand-lg">            
             <div class="container-fluid justify-content-end">
-                <a class="navbar-brand" href="#">
-                <img src="./img/logo-azul-cuadraro-mjdiazri.png" alt="Mjdiazri" width="60" height="60">
+                <a class="navbar-brand p-0" href="#">
+                <img id="img-nav"  src="./img/Code_logo azul_mjdiazri.png" alt="Mjdiazri" width="60" height="60">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,30 +41,35 @@
         <section class="section-intro">
             <!-- Inicio contenedor section intro-->
             <div class="container-fluid intro-div-main">
-                <h1>Backend developer</h1>
-                <h5>Desarrollo, rompo, soluciono, aprendo y optimizo </h5>                
+                <h1 class="titulo-main">Fullstack Developer</h1>
+                <h5 class="titulo-secundario">Desarrollo, soluciono, aprendo y optimizo </h5>                
                 <div class="intro-div-link"> <!-- Inicio div iconos-->
                     <a href="https://www.linkedin.com/in/mjdiazri/ " aria-label="Linkedin"><i class="bi bi-linkedin section-icon"></i></a>
                     <a href="https://github.com/Mjdiazri" aria-label="Github"><i class="bi bi-github section-icon"></i></a>
                     <a href="#" aria-label="Cv"><i class="bi bi-file-earmark-person-fill section-icon"></i></a>
                 </div> <!-- Cierre div iconos-->
-                <img src="/img/fotoProfesional.jpg" class="card-img-top" alt="foto-developer">
+                <div class="div-imagenes">
+                    <img src="/img/fotoProfesional.jpg" class=" img-delantera card-img-top" alt="foto-developer">
+                    <img src="/img/Code_logo_mjdiazri.png" class=" img-trasera card-img-top" alt="foto-developer">
+
+                </div>
+                
             <!-- Fin contenedor section intro-->
             </div>
         </section>
 
-        <section class="section-about my-5">
+        <section class="section-about my-4">
             <div class="container-fluid about-div-main">
-                <h4>Acerca de mí</h4>  
+                <h4 class="titulo-section">Acerca de mí</h4>  
                 <p class="about">
                     Soy una desarrolladora JAVA en formación, con experiencia en proyectos orientados a la aplicacion de tecnologias en la optimizacion de procesos logisticos. Me apasiona el mundo tecnologico, el desarrollo de software y aplicaciones. En busqueda de oportunidades para aplicar mis conocimientos y adquirir experiencia en el desarrollo de soluciones tecnologicas. 
                 </p>
             </div>
         </section>
 
-        <section class="section-projects my-5">
+        <section class="section-projects p-3">
             <div class="container-fluid projects-div-main">
-                <h4>Proyectos</h4> 
+                <h4 class="titulo-section">Proyectos</h4> 
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
                         <div class="card card-project">
@@ -88,7 +93,7 @@
                             <i class="bi bi-boxes project-icon"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Hotel Huellitas</h5>
-                                <p class="card-text">Plataforma web para la gestión de reservas en un hotel para mascotas. El sistema ofrece una experiencia de usuario completa (sección de inicio, servicios y contacto, módulos de reservas, login y panel de control administrativo). </p>
+                                <p class="card-text">Plataforma web creada colaborativamente para la gestión de reservas en un hotel. El sistema brinda una experiencia completa con una sección de inicio, servicios y contacto, módulos de reservas, login y panel de control administrativo. </p>
                                 <p>Tecnologias: </p>
                                 <div class="projects-tech mb-3">
                                     <i class="bi bi-filetype-html"></i>
@@ -105,13 +110,11 @@
                         <div class="card card-project">
                             <i class="bi bi-boxes project-icon"></i>
                             <div class="card-body">
-                                <h5 class="card-title">Task-App</h5>
-                                <p class="card-text">Aplicación web diseñada para optimizar la productividad personal mediante la planificación y gestión de tareas diarias. Permite a los usuarios crear, organizar, borrar, filtrar y hacer un seguimiento del estado de sus pendientes</p>
+                                <h5 class="card-title">Clinica-App</h5>
+                                <p class="card-text">Aplicación en consola desarrollada de forma colaborativa para la gestión de pacientes, turnos y medicos en una clinica. Permite la validación de datos y cuenta con persistencia de datos en memoria con opción para descargarlos en formato csv. </p>
                                 <p>Tecnologias: </p>
                                 <div class="projects-tech mb-3">
-                                    <i class="bi bi-filetype-html"></i>
-                                    <i class="bi bi-filetype-css"></i>
-                                    <i class="bi bi-filetype-js"></i>
+                                    <i class="bi bi-filetype-java"></i>
                                 </div>
                                 <a href="#" class="btn btn-primary">Demo</a>
                                 <a href="#" class="btn btn-primary">GitHub</a>
@@ -122,13 +125,12 @@
                         <div class="card card-project">
                             <i class="bi bi-boxes project-icon"></i>
                             <div class="card-body">
-                                <h5 class="card-title">Task-App</h5>
-                                <p class="card-text">Aplicación web diseñada para optimizar la productividad personal mediante la planificación y gestión de tareas diarias. Permite a los usuarios crear, organizar, borrar, filtrar y hacer un seguimiento del estado de sus pendientes</p>
+                                <h5 class="card-title">EndiBot</h5>
+                                <p class="card-text">Chatbot desarrollado en telegram para ampliar el vocabulario en ingles de los usuarios.Permite la busqueda simultanea de palabras por parte de los usuarios y obtener el significado, la categoria gramatical y ejemplos de su uso en la vida diaria.</p>
                                 <p>Tecnologias: </p>
                                 <div class="projects-tech mb-3">
-                                    <i class="bi bi-filetype-html"></i>
-                                    <i class="bi bi-filetype-css"></i>
-                                    <i class="bi bi-filetype-js"></i>
+                                    <i class="bi bi-filetype-py"></i>
+                                    <i class="bi bi-telegram"></i>
                                 </div>
                                 <a href="#" class="btn btn-primary">Demo</a>
                                 <a href="#" class="btn btn-primary">GitHub</a>
@@ -142,17 +144,17 @@
 
         <section class="section-cv my-5">
              <div class="container-fluid cv-div-main">
-                <h4>Curriculum</h4>
+                <h4 class="titulo-section">Curriculum</h4>
              </div>   
              <div class="container text-center cv-div-content">
                 <div class="container timeline-container position-relative py-3">
                     <div class="row align-items-center mb-5">
                         <div class="col-5 text-end">
-                            <h5>Logros académicos</h5>
+                            <h5 class="titulo-secundario">Logros académicos</h5>
                         </div>
                         <div class="col-2 text-center position-relative z-1"></div>
                         <div class="col-5">
-                            <h5 class="text-start">Experiencia laboral</h5>
+                            <h5 class="titulo-secundario text-start">Experiencia laboral</h5>
                         </div>
                     </div>
 
@@ -165,7 +167,7 @@
                             <p>Tecnología en gestión logística</p>
                         </div>
                         <div class="col-2 text-center position-relative z-1">
-                            <span class="badge bg-primary rounded-pill px-3 py-2">2020</span>
+                            <span class="badge px-3 py-2">2020</span>
                         </div>
                         <div class="col-5 text-start">
                             <p>Proyecto modelo de logística 4.0</p>
@@ -176,7 +178,7 @@
                     <div class="row align-items-center mb-4">
                         <div class="col-5"></div>
                         <div class="col-2 text-center position-relative z-1">
-                            <span class="badge bg-success rounded-pill px-3 py-2">2020</span>
+                            <span class="badge px-3 py-2">2020</span>
                         </div>
                         <div class="col-5 text-start">
                             <p>Proyecto IoT y Blockchain</p>
@@ -189,7 +191,7 @@
                             <p class="text-end">Especialización tecnológica en gestión económica de la  logística internacional</p>
                         </div>
                         <div class="col-2 text-center position-relative z-1">
-                            <span class="badge bg-success rounded-pill px-3 py-2">2021</span>
+                            <span class="badge px-3 py-2">2021</span>
                         </div>
                         <div class="col-5 text-start">
                             <p>Monitora de investigación (Universidad)</p>
@@ -200,7 +202,7 @@
                     <div class="row align-items-center mb-4">
                         <div class="col-5"></div>
                         <div class="col-2 text-center position-relative z-1">
-                            <span class="badge bg-success rounded-pill px-3 py-2">2022</span>
+                            <span class="badge px-3 py-2">2022</span>
                         </div>
                         <div class="col-5 text-start">
                             <p>Proyecto logística verde y tecnologías 4.0</p>
@@ -211,7 +213,7 @@
                     <div class="row align-items-center mb-4">
                         <div class="col-5"></div>
                         <div class="col-2 text-center position-relative z-1">
-                            <span class="badge bg-success rounded-pill px-3 py-2">2023</span>
+                            <span class="badge px-3 py-2">2023</span>
                         </div>
                         <div class="col-5 text-start">
                             <p>Proyecto vision artificial</p>
@@ -222,7 +224,7 @@
                     <div class="row align-items-center mb-4">
                         <div class="col-5"></div>
                         <div class="col-2 text-center position-relative z-1">
-                            <span class="badge bg-success rounded-pill px-3 py-2">2024</span>
+                            <span class="badge px-3 py-2">2024</span>
                         </div>
                         <div class="col-5 text-start">
                             <p>Proyecto gestión editorial de revista científica</p>
@@ -233,7 +235,7 @@
                     <div class="row align-items-center mb-4">
                         <div class="col-5"></div>
                         <div class="col-2 text-center position-relative z-1">
-                            <span class="badge bg-success rounded-pill px-3 py-2">2025</span>
+                            <span class="badge px-3 py-2">2025</span>
                         </div>
                         <div class="col-5 text-start">
                         </div>
@@ -246,7 +248,7 @@
                             <p>Bootcamp Fullstack Java</p>
                         </div>
                         <div class="col-2 text-center position-relative z-1">
-                            <span class="badge bg-success rounded-pill px-3 py-2">2026</span>
+                            <span class="badge px-3 py-2">2026</span>
                         </div>
                         <div class="col-5 text-start"></div>
                     </div>
@@ -256,7 +258,7 @@
 
         <section class="section-contact my-5">
              <div class="container-fluid contact-div-main">
-                <h4>Contacto</h4>
+                <h4 class="titulo-section" >Contacto</h4>
                 <div class="div-form">
                     <form class="row g-3 formulario">
                     <div class="col-md-6">
@@ -277,30 +279,32 @@
                     </form>
                 </div> 
              </div>
-        </section>
-
-        <footer>
-              <div class="intro-div-link text-center"> <!-- Inicio div iconos-->
-                    <a href="https://www.linkedin.com/in/mjdiazri/ " aria-label="Linkedin"><i class="bi bi-linkedin section-icon"></i></a>
-                    <a href="https://github.com/Mjdiazri" aria-label="Github"><i class="bi bi-github section-icon"></i></a>
-                    <a href="#" aria-label="Cv"><i class="bi bi-file-earmark-person-fill section-icon"></i></a>
-                </div> <!-- Cierre div iconos-->
-                <div class="div-enlaces">
-                    <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Acerca de mí</a></p>
-                    <p>|</p>
-                    <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Proyectos</a></p>
-                    <p>|</p>
-                    <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Curriculum</a></p>
-                    <p>|</p>
-                    <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Contacto</a></p>
-                    <p>|</p>
-                    <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Skills</a></p>
-                </div>
-                <div>
-                    <p class="text-center m-0">Copyrigth @ 2026 Monica Jazmin Diaz    ||    Desarrolladora Backend  ||   Versión 1.0.0  Last update: Domingo 11 de septiembre 2026 </p>
-                </div>
-        </footer>        
+        </section>       
     </main>
+    <footer>
+        <div class="foot-div text-center p-3"> <!-- Inicio div iconos-->
+            <div class="div-iconos">
+                <a href="https://www.linkedin.com/in/mjdiazri/ " aria-label="Linkedin"><i class=" bi bi-linkedin section-icon"></i></a>
+                <a href=" enlace-footer https://github.com/Mjdiazri" aria-label="Github"><i class="bi bi-github section-icon"></i></a>
+                <a href="#" aria-label="Cv"><i class=" bi bi-file-earmark-person-fill section-icon"></i></a>
+            </div>
+                    
+            <div class="div-enlaces">
+                <p><a class=" enlace-footer parrafo" href="#">Acerca de mí</a></p>
+                <p>|</p>
+                <p><a class=" enlace-footer parrafo" href="#">Proyectos</a></p>
+                <p>|</p>
+                <p><a class=" enlace-footer parrafo" href="#">Curriculum</a></p>
+                <p>|</p>
+                <p><a class="enlace-footer parrafo" href="#">Contacto</a></p>
+                <p>|</p>
+                <p><a class="enlace-footer parrafo" href="#">Skills</a></p>
+            </div>
+            <div class="div-creditos">
+                <p class="text-center m-0">Copyrigth @ 2026 Monica Jazmin Diaz  <span>||</span>      Desarrolladora Backend  <span>||</span>   Versión 1.0.0  Last update: Domingo 11 de septiembre 2026 </p>
+            </div>
+        </div> <!-- Cierre div iconos-->    
+    </footer> 
 
     <!-- Scripts Links-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

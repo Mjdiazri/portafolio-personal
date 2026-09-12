@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root{
     --colorBlue: #021f40;
     --colorGreen:#2596be;
+    --colorUltra: #155c75;
     --bs-navbar-active-color: white;
 }
 
@@ -8,7 +11,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', serif;
 }
+
+/*FONTS*/
+.titulo-main{
+    font-weight: 1000;
+    color: var(--colorBlue);
+}
+
+.titulo-secundario{
+    font-weight: 600;
+}
+
+.titulo-section{
+    font-weight: 900;
+    color: var(--colorGreen);
+}
+
+
 
 /*NAV*/
 header, .navbar-nav, .nav-link, .nav-link.show{
@@ -16,14 +37,20 @@ header, .navbar-nav, .nav-link, .nav-link.show{
     color: var(--colorGreen) ;
 }
 
+#img-nav, .img-delantera, .img-trasera{
+    border-radius: 50%;
+}
+
 .nav-link:focus, .nav-link:hover{
     color: white;
 }
 
 /*SECCIONES*/
-.intro-div-main, .about-div-main, .projects-div-main,.cv-div-main, .contact-div-main{
+.intro-div-main, .about-div-main, .projects-div-main,.cv-div-main, .contact-div-main, .foot-div{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* SECCION 1 */
@@ -40,32 +67,72 @@ header, .navbar-nav, .nav-link, .nav-link.show{
     color: black;
 }
 
-.card-img-top{
-    margin-top: 15px;
+    /*Imagenes*/
+
+.div-imagenes{
+    position: relative;
     width: 100%; 
     max-width: 350px;
-    height: auto;
-    border-radius: 50%;
+    height:350px;
+    margin-top: 15px;
+
+    transform-style: preserve-3d;
+    perspective: 1000px; 
+    transition: transform 0.8s ease-in-out; 
+    
+}  
+
+.div-imagenes:hover{
+    transform: rotateY(180deg);
 }
 
-/* SECCION 2, 3 */
+.card-img-top{
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    object-fit: cover;
+    border: solid var(--colorBlue);
+}
+
+.img-trasera{
+    transform: rotateY(180deg);
+}
+
+/*CONF SECCIONES SEGUNDARIAS*/
+
 .about-div-main, .projects-div-main, .cv-div-main, .contact-div-main{
-    margin-top: 50px;
+    margin-top: 20px;
     max-width: 70%;
     align-items: end;
     text-align:justify;
     gap: 25px;
 }
 
+/* SECCION 2, 3 */
+
 p.about{
   margin-right: 90px;
 }
 
 /*SECCION 3 -cards*/
+.section-projects{
+    background-color: var(--colorUltra);
+
+    .titulo-section{
+        color: white;
+    }
+
+}
+
 .card-project{
     display: flex;
     flex-direction: row;
-     margin-right: 90px;
+    margin-right: 70px;
+    padding: 10px;
 }
 
 .project-icon{
@@ -92,11 +159,20 @@ p.about{
 
 .timeline-container{
     position: relative;
+
+    .titulo-secundario{
+        color: var(--colorUltra);
+        font-weight: 700;
+    }
+
+    .badge{
+        background-color:var(--colorBlue);
+    }
 }
 
 .timeline-line{
     position: absolute;
-    background-color: black;
+    background-color: var(--colorBlue);
     top: 70px;
     bottom: 30px;
     left: 50%;
@@ -117,12 +193,27 @@ p.about{
 
 /*FOOTER*/
 footer{
-    background-color: rgb(222, 218, 218);
+    background-color: var(--colorBlue);
+
+    span{
+        color: var(--colorGreen);
+    }
+
+    .bi{
+    color: var(--colorGreen);
+    }
 }
-.div-enlaces{
+
+.div-enlaces, .div-iconos, .div-creditos, .enlace-footer{
     display: flex;
     align-items: center;
     justify-content:center;
     gap: 20px;
-    
+    flex-wrap: wrap;
+    color: var(--colorGreen);
+    text-decoration: none;
+}
+
+.parrafo, .div-creditos{
+    color: white;
 }
