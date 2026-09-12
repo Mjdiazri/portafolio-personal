@@ -145,15 +145,15 @@
                 <div class="container timeline-container position-relative py-3">
                     <div class="row align-items-center mb-5">
                         <div class="col-5 text-end">
-                            <h5 class="fw-bold">Logros académicos</h5>
+                            <h5>Logros académicos</h5>
                         </div>
                         <div class="col-2 text-center position-relative z-1"></div>
                         <div class="col-5">
-                            <h5 class="fw-bold text-start">Experiencia laboral</h5>
+                            <h5 class="text-start">Experiencia laboral</h5>
                         </div>
                     </div>
 
-                    
+
                     <div class="timeline-line"></div>
 
                     <!--Row 1 -->
@@ -251,26 +251,52 @@
                 </div> <!--Cierre container cv-div-content-->            
         </section>
 
-        <section class="section-cv my-5">
-             <div class="container-fluid cv-div-main">
-                <h4>Curriculum</h4>
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col col-academic">
-                            <h5>Logros académicos</h5>
-
-                        Tecnología en gestión logística
-                        </div>
-                        <div class="col order-5 col-experience">
-                            <h5>Experiencia laboral</h5>
-                        Second in DOM, with a larger order
-                        </div>
-                    </div> <!--Cierre row-->
-                </div> <!--Cierre container text-center--> 
-             </div><!--Cierre cv-div-main-->           
+        <section class="section-contact my-5">
+             <div class="container-fluid contact-div-main">
+                <h4>Contacto</h4>
+                <div class="div-form">
+                    <form class="row g-3 formulario">
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Mensaje</label>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Contactemos!</button>
+                    </div>
+                    </form>
+                </div> 
+             </div>
         </section>
 
-        
+        <footer>
+              <div class="intro-div-link text-center"> <!-- Inicio div iconos-->
+                    <a href="https://www.linkedin.com/in/mjdiazri/ " aria-label="Linkedin"><i class="bi bi-linkedin section-icon"></i></a>
+                    <a href="https://github.com/Mjdiazri" aria-label="Github"><i class="bi bi-github section-icon"></i></a>
+                    <a href="#" aria-label="Cv"><i class="bi bi-file-earmark-person-fill section-icon"></i></a>
+                </div> <!-- Cierre div iconos-->
+                <div class="div-enlaces">
+                    <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Acerca de mí</a></p>
+                    <p>|</p>
+                    <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Proyectos</a></p>
+                    <p>|</p>
+                    <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Curriculum</a></p>
+                    <p>|</p>
+                    <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Contacto</a></p>
+                    <p>|</p>
+                    <p><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Skills</a></p>
+                </div>
+                <div>
+                    <p class="text-center m-0">Copyrigth @ 2026 Monica Jazmin Diaz    ||    Desarrolladora Backend  ||   Versión 1.0.0  Last update: Domingo 11 de septiembre 2026 </p>
+                </div>
+        </footer>        
     </main>
 
     <!-- Scripts Links-->

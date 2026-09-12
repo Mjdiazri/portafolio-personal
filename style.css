@@ -5,7 +5,7 @@
 }
 
 /*SECCIONES*/
-.intro-div-main, .about-div-main, .projects-div-main,.cv-div-main{
+.intro-div-main, .about-div-main, .projects-div-main,.cv-div-main, .contact-div-main{
     display: flex;
     flex-direction: column;
 }
@@ -33,7 +33,7 @@
 }
 
 /* SECCION 2, 3 */
-.about-div-main, .projects-div-main, .cv-div-main{
+.about-div-main, .projects-div-main, .cv-div-main, .contact-div-main{
     margin-top: 50px;
     max-width: 70%;
     align-items: end;
@@ -49,6 +49,7 @@ p.about{
 .card-project{
     display: flex;
     flex-direction: row;
+     margin-right: 90px;
 }
 
 .project-icon{
@@ -64,11 +65,11 @@ p.about{
     font-size: 25px;
 }
 
-/*SECCION 4-PROVISIONAL*/
+/*SECCION 4*/
 .cv-div-content, .timeline-container{
     padding: 0px;
     margin-top: 20px;
-    max-width: 90%;
+    max-width: 80%;
     align-items:flex-start;
     text-align:center;
 }
@@ -89,17 +90,23 @@ p.about{
 }
 
 
+/*SECCION 5 */
 
-
-/*SECCION 4 */
-.col-academic, .col-experience{
-    margin-top: 30px;
+.formulario{
+    padding: 30px;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-right: 50px;
 }
 
-.col-academic{
-    border-right: solid black;
+/*FOOTER*/
+footer{
+    background-color: rgb(222, 218, 218);
 }
-
-.col-experience{
-    border-left: black solid;
+.div-enlaces{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 20px;
+    
 }
