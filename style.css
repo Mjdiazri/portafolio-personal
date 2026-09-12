@@ -1,7 +1,23 @@
+:root{
+    --colorBlue: #021f40;
+    --colorGreen:#2596be;
+    --bs-navbar-active-color: white;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*NAV*/
+header, .navbar-nav, .nav-link, .nav-link.show{
+    background: var(--colorBlue);
+    color: var(--colorGreen) ;
+}
+
+.nav-link:focus, .nav-link:hover{
+    color: white;
 }
 
 /*SECCIONES*/
