@@ -355,8 +355,8 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 
 /*SECCION 5 */
 
-.section-contact{
-    background-color: var(--colorGreen);
+.section-contacto{
+    background-color: var(--colorUltra);
 
     .titulo-section{
         color: var(--colorBlue);
@@ -376,6 +376,51 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 .input{
     border: 1px solid rgba(255,255,255,0.2);
 
+}
+
+/* Tarjeta de cristal transparente */
+.glass-card {
+    background: rgba(11, 25, 44, 0.45); /* Azul muy oscuro semi-transparente */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); /* Compatibilidad con Safari */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Borde sutil brillante */
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Campos de texto dentro de la tarjeta */
+.glass-input {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.glass-input:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: #2596be; /* Tu cian al enfocar */
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(37, 150, 190, 0.25);
+}
+
+.glass-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Botón de envío */
+.btn-glass-submit {
+    background-color: #2596be;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-glass-submit:hover {
+    background-color: #1d7a9c;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 150, 190, 0.4);
 }
 
 

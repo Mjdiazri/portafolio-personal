@@ -23,16 +23,16 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Acerca de mi</a>
+                            <a class="nav-link" href="#about" data-bs-dismiss="collapse" data-bs-target="#navbarTogglerDemo01">Acerca de mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Proyectos</a>
+                            <a class="nav-link" href="#projects" data-bs-dismiss="collapse" data-bs-target="#navbarTogglerDemo01">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Curriculum</a>
+                            <a class="nav-link" href="#cv" data-bs-dismiss="collapse" data-bs-target="#navbarTogglerDemo01">Curriculum</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="#contacto" data-bs-dismiss="collapse" data-bs-target="#navbarTogglerDemo01">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -48,11 +48,11 @@
                 <div class="intro-div-link"> <!-- Inicio div iconos-->
                     <a href="https://www.linkedin.com/in/mjdiazri/ " aria-label="Linkedin"><i class="bi bi-linkedin section-icon"></i></a>
                     <a href="https://github.com/Mjdiazri" aria-label="Github"><i class="bi bi-github section-icon"></i></a>
-                    <a href="#" aria-label="Cv"><i class="bi bi-file-earmark-person-fill section-icon"></i></a>
+                    <a href="./Doc/CV-Generation_Monica Diaz_v3.pdf" aria-label="Cv"><i class="bi bi-file-earmark-person-fill section-icon"></i></a>
                 </div> <!-- Cierre div iconos-->
                 <div class="div-imagenes">
-                    <img src="/img/foto.jpg" class=" img-delantera card-img-top" alt="foto-developer">
-                    <img src="/img/logo-upscaled.png" class=" img-trasera card-img-top" alt="foto-developer">
+                    <img src="./img/foto.jpg" class=" img-delantera card-img-top" alt="foto-developer">
+                    <img src="./img/logo-upscaled.png" class=" img-trasera card-img-top" alt="foto-developer">
 
                 </div>
                 
@@ -60,7 +60,7 @@
             </div>
         </section>
 
-        <section class="section-about my-4">
+        <section class="section-about my-4" id="about">
             <div class="container-fluid about-div-main">
                 <div class="row justify-content-end">
                     <div class="col-12 col-md-10">
@@ -73,7 +73,7 @@
             </div>
         </section>
 
-        <section class="section-projects p-3">
+        <section class="section-projects p-3" id="projects">
             <div class="container-fluid projects-div-main">
                 <h4 class="titulo-section">Proyectos</h4> 
                 <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -92,8 +92,8 @@
                                         </div>
                                     </div>                                                         
                                     <div class="project-buttons">
-                                        <a href="#" class="btn btn-primary">Demo</a>
-                                        <a href="#" class="btn btn-primary">GitHub</a>
+                                        <a href="https://mjdiazri.github.io/planificadorApp/" class="btn btn-primary">Demo</a>
+                                        <a href="https://github.com/Mjdiazri/planificadorApp" class="btn btn-primary">GitHub</a>
                                     </div>
                                 </div>    
                             </div>
@@ -115,8 +115,8 @@
                                         </div>
                                     </div>                                                         
                                     <div class="project-buttons">
-                                        <a href="#" class="btn btn-primary">Demo</a>
-                                        <a href="#" class="btn btn-primary">GitHub</a>
+                                        <a href="https://samuelvelez-g.github.io/Huellitas-Hotel-Project/" class="btn btn-primary">Demo</a>
+                                        <a href="https://github.com/SamuelVelez-G/Huellitas-Hotel-Project" class="btn btn-primary">GitHub</a>
                                     </div>
                                 </div> 
                             </div>
@@ -137,7 +137,7 @@
                                     </div>                                                         
                                     <div class="project-buttons">
                                         <a href="#" class="btn btn-primary">Demo</a>
-                                        <a href="#" class="btn btn-primary">GitHub</a>
+                                        <a href="https://github.com/Mjdiazri/clinicaapp" class="btn btn-primary">GitHub</a>
                                     </div>
                                 </div> 
                             </div>
@@ -158,7 +158,7 @@
                                     </div>                                                         
                                     <div class="project-buttons">
                                         <a href="#" class="btn btn-primary">Demo</a>
-                                        <a href="#" class="btn btn-primary">GitHub</a>
+                                        <a href="https://github.com/Mjdiazri/endiBOT" class="btn btn-primary">GitHub</a>
                                     </div>
                                 </div> 
                             </div>
@@ -169,7 +169,7 @@
             </div> <!--Fin div projects-div-main-->
         </section>
 
-        <section class="section-cv my-5">
+        <section class="section-cv my-5" id="cv">
             <div class="container-fluid cv-div-main">
                 <h4 class="titulo-section text-start ms-4">Currículum</h4>
             </div>   
@@ -303,52 +303,55 @@
             </div> <!-- Cierre cv-div-content -->            
         </section>
 
-        <section class="section-contact py-5">
-             <div class="container-fluid contact-div-main">
-                <h4 class="titulo-section" >Contacto</h4>
-                <div class="row g-4 align-items-center">
-                    <!-- Info Izquierda -->
-                     <div class="col-lg-7">
-                        <div class="contacto-card p-4 p-md-5">
-                        <form>
-                            <div class="input mb-3 text-start">
-                                <label class="form-label">Nombre</label>
-                                <input type="text" class="form-control" placeholder="Tu nombre">
+        <section class="section-contacto py-5 position-relative" id="contacto">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="glass-card p-4 p-md-5">
+                            <div class="row g-4 align-items-center">
+                                <div class="col-md-5 text-start text-white">
+                                    <h2 class="fw-bold display-6 mb-2">Contacto</h2>
+                                    <p class="text-white-50 mb-4">¡Hablemos! Estoy disponible para nuevas oportunidades y proyectos.</p>
+                                    <div class="d-flex gap-3 fs-4">
+                                        <a href="#" class="text-white opacity-75 opacity-100-hover"><i class="bi bi-linkedin"></i></a>
+                                        <a href="#" class="text-white opacity-75 opacity-100-hover"><i class="bi bi-github"></i></a>
+                                        <a href="#" class="text-white opacity-75 opacity-100-hover"><i class="bi bi-envelope-fill"></i></a>
+                                    </div>
+                                </div>
+
+                                <!-- Formulario -->
+                                <div class="col-md-7">
+                                    <form>
+                                        <div class="row g-3">
+                                        <div class="col-md-6 text-start">
+                                            <label class="form-label text-white small">Nombre *</label>
+                                            <input type="text" class="form-control glass-input" placeholder="Tu nombre">
+                                        </div>
+                                        <div class="col-md-6 text-start">
+                                            <label class="form-label text-white small">Email *</label>
+                                            <input type="email" class="form-control glass-input" placeholder="tu@email.com">
+                                        </div>
+                                        <div class="col-12 text-start">
+                                            <label class="form-label text-white small">Asunto</label>
+                                            <input type="text" class="form-control glass-input" placeholder="Motivo de tu mensaje">
+                                        </div>
+                                        <div class="col-12 text-start">
+                                            <label class="form-label text-white small">Mensaje *</label>
+                                            <textarea class="form-control glass-input" rows="3" placeholder="Escribe aquí..."></textarea>
+                                        </div>
+                                        <div class="col-12 text-end mt-4">
+                                            <button type="submit" class="btn btn-glass-submit px-4 py-2">Enviar</button>
+                                        </div>
+                                        </div>
+                                    </form>
+                                </div>
+
                             </div>
-                            <div class=" input mb-3 text-start">
-                                <label class="form-label">Email</label>
-                                <input type="email" class="form-control " placeholder="tu@email.com">
-                            </div>
-                            <div class="input mb-3 text-start">
-                            <label class="form-label ">Mensaje</label>
-                            <textarea class="form-control " rows="3" placeholder="Tu mensaje..."></textarea>
-                            </div>
-                            <div class="text-start">
-                            <button type="submit" class="btn px-4 py-2">Enviar mensaje</button>
-                            </div>
-                        </form>
-                        </div>
+                        </div> <!-- /glass-card -->
+
                     </div>
-                    <!--Info-->
-                    <div class="col-lg-5">
-                        <h3 class="fw-bold mb-3">¡Hablemos!</h3>
-                        <p class="mb-4">Estoy abierta a nuevas oportunidades como desarrolladora, proyectos colaborativos o consultas técnicas.</p>
-                        <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-envelope-fill me-3 fs-5"></i>
-                        <span>tuemail@ejemplo.com</span>
-                        </div>
-                        <div class="d-flex align-items-center mb-3">
-                        <i class="bi bi-linkedin me-3 fs-5""></i>
-                        <span>linkedin.com/in/tuperfil</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                        <i class="bi bi-github me-3 fs-5"></i>
-                        <span>github.com/tuusuario</span>
-                        </div>
-                    </div>
-        
                 </div>
-             </div>
+            </div>
         </section>       
     </main>
     <footer>
@@ -371,7 +374,7 @@
                 <p><a class="enlace-footer parrafo" href="#">Skills</a></p>
             </div>
             <div class="div-creditos">
-                <p class="text-center m-0">Copyrigth @ 2026 Monica Jazmin Diaz  <span>||</span>      Desarrolladora Backend  <span>||</span>   Versión 1.0.0  Last update: Domingo 11 de septiembre 2026 </p>
+                <p class="text-center m-0">Copyright @ 2026 Monica Jazmin Diaz  <span>||</span>      Desarrolladora Backend  <span>||</span>   Versión 1.0.0  Last update: Domingo 11 de septiembre 2026 </p>
             </div>
         </div> <!-- Cierre div iconos-->    
     </footer> 
