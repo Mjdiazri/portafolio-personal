@@ -6,6 +6,8 @@
     <title>portafolio-mjdiazri</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -13,7 +15,7 @@
         <nav class="navbar navbar-expand-lg">            
             <div class="container-fluid justify-content-end">
                 <a class="navbar-brand p-0" href="#">
-                <img id="img-nav"  src="./img/Code_logo azul_mjdiazri.png" alt="Mjdiazri" width="60" height="60">
+                <img id="img-nav"  src="./img/logo.png" alt="Mjdiazri" width="60" height="60">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,8 +51,8 @@
                     <a href="#" aria-label="Cv"><i class="bi bi-file-earmark-person-fill section-icon"></i></a>
                 </div> <!-- Cierre div iconos-->
                 <div class="div-imagenes">
-                    <img src="/img/fotoProfesional.jpg" class=" img-delantera card-img-top" alt="foto-developer">
-                    <img src="/img/Code_logo_mjdiazri.png" class=" img-trasera card-img-top" alt="foto-developer">
+                    <img src="/img/foto.jpg" class=" img-delantera card-img-top" alt="foto-developer">
+                    <img src="/img/logo-upscaled.png" class=" img-trasera card-img-top" alt="foto-developer">
 
                 </div>
                 
@@ -60,10 +62,14 @@
 
         <section class="section-about my-4">
             <div class="container-fluid about-div-main">
-                <h4 class="titulo-section">Acerca de mí</h4>  
-                <p class="about">
-                    Soy una desarrolladora JAVA en formación, con experiencia en proyectos orientados a la aplicacion de tecnologias en la optimizacion de procesos logisticos. Me apasiona el mundo tecnologico, el desarrollo de software y aplicaciones. En busqueda de oportunidades para aplicar mis conocimientos y adquirir experiencia en el desarrollo de soluciones tecnologicas. 
-                </p>
+                <div class="row justify-content-end">
+                    <div class="col-12 col-md-10">
+                        <h4 class="titulo-section text-end mb-4">Acerca de mí</h4> 
+                        <p class="about-text">
+                        Soy desarrolladora Java en formación con experiencia en proyectos enfocados en la optimización de procesos logísticos mediante tecnología. Me apasiona el desarrollo de software y la creación de aplicaciones eficientes. Actualmente busco oportunidades para aplicar mis conocimientos, aportar valor y seguir creciendo en el desarrollo de soluciones tecnológicas.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -72,68 +78,89 @@
                 <h4 class="titulo-section">Proyectos</h4> 
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col">
-                        <div class="card card-project">
-                            <i class="bi bi-boxes project-icon"></i>
+                        <div class="card card-project proyect-one">
                             <div class="card-body">
                                 <h5 class="card-title">Task-App</h5>
-                                <p class="card-text">Aplicación web diseñada para optimizar la productividad personal mediante la planificación y gestión de tareas diarias. Permite a los usuarios crear, organizar, borrar, filtrar y hacer un seguimiento del estado de sus pendientes</p>
-                                <p>Tecnologias: </p>
-                                <div class="projects-tech mb-3">
-                                    <i class="bi bi-filetype-html"></i>
-                                    <i class="bi bi-filetype-css"></i>
-                                    <i class="bi bi-filetype-js"></i>
-                                </div>
-                                <a href="#" class="btn btn-primary">Demo</a>
-                                <a href="#" class="btn btn-primary">GitHub</a>
+                                <p class="card-text text-start">Aplicación web para organizar, gestionar y hacer seguimiento de tareas diarias.</p>
+                                <div class="card-project-footer">
+                                    <div class="card-tech">
+                                        <p>Tecnologías: </p>
+                                        <div class="projects-tech mb-3">
+                                            <i class="fa-brands fa-html5"></i>
+                                            <i class="fa-brands fa-css"></i>
+                                            <i class="fa-brands fa-square-js"></i>
+                                        </div>
+                                    </div>                                                         
+                                    <div class="project-buttons">
+                                        <a href="#" class="btn btn-primary">Demo</a>
+                                        <a href="#" class="btn btn-primary">GitHub</a>
+                                    </div>
+                                </div>    
                             </div>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card card-project">
-                            <i class="bi bi-boxes project-icon"></i>
+                        <div class="card card-project proyect-two">
                             <div class="card-body">
                                 <h5 class="card-title">Hotel Huellitas</h5>
-                                <p class="card-text">Plataforma web creada colaborativamente para la gestión de reservas en un hotel. El sistema brinda una experiencia completa con una sección de inicio, servicios y contacto, módulos de reservas, login y panel de control administrativo. </p>
-                                <p>Tecnologias: </p>
-                                <div class="projects-tech mb-3">
-                                    <i class="bi bi-filetype-html"></i>
-                                    <i class="bi bi-filetype-css"></i>
-                                    <i class="bi bi-filetype-js"></i>
-                                    <i class="bi bi-filetype-java"></i>
-                                </div>
-                                <a href="#" class="btn btn-primary">Demo</a>
-                                <a href="#" class="btn btn-primary">GitHub</a>
+                                <p class="card-text text-start">Plataforma web colaborativa para gestionar reservas y servicios de un hotel para mascotas. </p>
+                                <div class="card-project-footer">
+                                    <div class="card-tech">
+                                        <p>Tecnologías: </p>
+                                        <div class="projects-tech mb-3">
+                                            <i class="fa-brands fa-html5"></i>
+                                            <i class="fa-brands fa-css"></i>
+                                            <i class="fa-brands fa-square-js"></i>
+                                            <i class="fa-brands fa-java"></i>
+                                        </div>
+                                    </div>                                                         
+                                    <div class="project-buttons">
+                                        <a href="#" class="btn btn-primary">Demo</a>
+                                        <a href="#" class="btn btn-primary">GitHub</a>
+                                    </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card card-project">
-                            <i class="bi bi-boxes project-icon"></i>
+                    <div class="col mb-4">
+                        <div class="card card-project proyect-three">
+                            
                             <div class="card-body">
                                 <h5 class="card-title">Clinica-App</h5>
-                                <p class="card-text">Aplicación en consola desarrollada de forma colaborativa para la gestión de pacientes, turnos y medicos en una clinica. Permite la validación de datos y cuenta con persistencia de datos en memoria con opción para descargarlos en formato csv. </p>
-                                <p>Tecnologias: </p>
-                                <div class="projects-tech mb-3">
-                                    <i class="bi bi-filetype-java"></i>
-                                </div>
-                                <a href="#" class="btn btn-primary">Demo</a>
-                                <a href="#" class="btn btn-primary">GitHub</a>
+                                <p class="card-text text-start">Aplicación de consola para gestionar pacientes, médicos y turnos con exportación de datos a CSV. </p>
+                                <div class="card-project-footer">
+                                    <div class="card-tech">
+                                        <p>Tecnologías: </p>
+                                        <div class="projects-tech mb-3">
+                                            <i class="fa-brands fa-java"></i>                                           
+                                        </div>
+                                    </div>                                                         
+                                    <div class="project-buttons">
+                                        <a href="#" class="btn btn-primary">Demo</a>
+                                        <a href="#" class="btn btn-primary">GitHub</a>
+                                    </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card card-project">
-                            <i class="bi bi-boxes project-icon"></i>
+                    <div class="col mb-4">
+                        <div class="card card-project proyect-four">
                             <div class="card-body">
                                 <h5 class="card-title">EndiBot</h5>
-                                <p class="card-text">Chatbot desarrollado en telegram para ampliar el vocabulario en ingles de los usuarios.Permite la busqueda simultanea de palabras por parte de los usuarios y obtener el significado, la categoria gramatical y ejemplos de su uso en la vida diaria.</p>
-                                <p>Tecnologias: </p>
-                                <div class="projects-tech mb-3">
-                                    <i class="bi bi-filetype-py"></i>
-                                    <i class="bi bi-telegram"></i>
-                                </div>
-                                <a href="#" class="btn btn-primary">Demo</a>
-                                <a href="#" class="btn btn-primary">GitHub</a>
+                                <p class="card-text text-start">Chatbot de Telegram para aprender vocabulario en inglés mediante definiciones y ejemplos de uso.</p>
+                                <div class="card-project-footer">
+                                    <div class="card-tech">
+                                        <p>Tecnologías: </p>
+                                        <div class="projects-tech mb-3">
+                                            <i class="fa-brands fa-python"></i>
+                                            <i class="fa-brands fa-telegram"></i>
+                                        </div>
+                                    </div>                                                         
+                                    <div class="project-buttons">
+                                        <a href="#" class="btn btn-primary">Demo</a>
+                                        <a href="#" class="btn btn-primary">GitHub</a>
+                                    </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -143,141 +170,184 @@
         </section>
 
         <section class="section-cv my-5">
-             <div class="container-fluid cv-div-main">
-                <h4 class="titulo-section">Curriculum</h4>
-             </div>   
-             <div class="container text-center cv-div-content">
+            <div class="container-fluid cv-div-main">
+                <h4 class="titulo-section text-start ms-4">Currículum</h4>
+            </div>   
+            <div class="container cv-div-content">
                 <div class="container timeline-container position-relative py-3">
+                    
+                    <!-- Encabezados -->
                     <div class="row align-items-center mb-5">
                         <div class="col-5 text-end">
                             <h5 class="titulo-secundario">Logros académicos</h5>
                         </div>
                         <div class="col-2 text-center position-relative z-1"></div>
-                        <div class="col-5">
-                            <h5 class="titulo-secundario text-start">Experiencia laboral</h5>
+                        <div class="col-5 text-start">
+                            <h5 class="titulo-secundario">Experiencia laboral</h5>
                         </div>
                     </div>
 
-
+                    <!-- Línea Central -->
                     <div class="timeline-line"></div>
 
-                    <!--Row 1 -->
+                    <!-- Row 1 -->
                     <div class="row align-items-center mb-4">
                         <div class="col-5 text-end">
-                            <p>Tecnología en gestión logística</p>
+                            <div class="cv-card ms-auto">
+                                <p class="cv-card-title">Tecnología en gestión logística</p>
+                                <span class="cv-badge">2020</span>
+                            </div>
                         </div>
-                        <div class="col-2 text-center position-relative z-1">
-                            <span class="badge px-3 py-2">2020</span>
+                        <div class="col-2 text-center position-relative z-1 d-flex justify-content-center">
+                            <div class="timeline-dot"></div>
                         </div>
                         <div class="col-5 text-start">
-                            <p>Proyecto modelo de logística 4.0</p>
+                            <div class="cv-card me-auto">
+                                <p class="cv-card-title">Proyecto modelo de logística 4.0</p>
+                                <span class="cv-badge">2020</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Row 2 -->
                     <div class="row align-items-center mb-4">
                         <div class="col-5"></div>
-                        <div class="col-2 text-center position-relative z-1">
-                            <span class="badge px-3 py-2">2020</span>
+                        <div class="col-2 text-center position-relative z-1 d-flex justify-content-center">
+                            <div class="timeline-dot"></div>
                         </div>
                         <div class="col-5 text-start">
-                            <p>Proyecto IoT y Blockchain</p>
+                            <div class="cv-card me-auto">                                
+                                <p class="cv-card-title">Proyecto IoT y Blockchain</p>
+                                <span class="cv-badge">2020</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Row 3 -->
                     <div class="row align-items-center mb-4">
-                        <div class="col-5">
-                            <p class="text-end">Especialización tecnológica en gestión económica de la  logística internacional</p>
+                        <div class="col-5 text-end">
+                            <div class="cv-card ms-auto">                                
+                                <p class="cv-card-title">Especialización tecnológica en gestión económica de la logística internacional</p>
+                                <span class="cv-badge">2021</span>
+                            </div>
                         </div>
-                        <div class="col-2 text-center position-relative z-1">
-                            <span class="badge px-3 py-2">2021</span>
+                        <div class="col-2 text-center position-relative z-1 d-flex justify-content-center">
+                            <div class="timeline-dot"></div>
                         </div>
                         <div class="col-5 text-start">
-                            <p>Monitora de investigación (Universidad)</p>
+                            <div class="cv-card me-auto">                                
+                                <p class="cv-card-title">Monitora de investigación (Universidad)</p>
+                                <span class="cv-badge">2021</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Row 4 -->
                     <div class="row align-items-center mb-4">
                         <div class="col-5"></div>
-                        <div class="col-2 text-center position-relative z-1">
-                            <span class="badge px-3 py-2">2022</span>
+                        <div class="col-2 text-center position-relative z-1 d-flex justify-content-center">
+                            <div class="timeline-dot"></div>
                         </div>
                         <div class="col-5 text-start">
-                            <p>Proyecto logística verde y tecnologías 4.0</p>
+                            <div class="cv-card me-auto">
+                                <p class="cv-card-title">Proyecto logística verde y tecnologías 4.0</p>
+                                <span class="cv-badge">2022</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Row 5 -->
                     <div class="row align-items-center mb-4">
                         <div class="col-5"></div>
-                        <div class="col-2 text-center position-relative z-1">
-                            <span class="badge px-3 py-2">2023</span>
+                        <div class="col-2 text-center position-relative z-1 d-flex justify-content-center">
+                            <div class="timeline-dot"></div>
                         </div>
                         <div class="col-5 text-start">
-                            <p>Proyecto vision artificial</p>
+                            <div class="cv-card me-auto">
+                                <p class="cv-card-title">Proyecto visión artificial</p>
+                                <span class="cv-badge">2023</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Row 6 -->
                     <div class="row align-items-center mb-4">
                         <div class="col-5"></div>
-                        <div class="col-2 text-center position-relative z-1">
-                            <span class="badge px-3 py-2">2024</span>
+                        <div class="col-2 text-center position-relative z-1 d-flex justify-content-center">
+                            <div class="timeline-dot"></div>
                         </div>
                         <div class="col-5 text-start">
-                            <p>Proyecto gestión editorial de revista científica</p>
+                            <div class="cv-card me-auto">
+                                <p class="cv-card-title">Proyecto gestión editorial de revista científica</p>
+                                <span class="cv-badge">2024</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Row 7 -->
                     <div class="row align-items-center mb-4">
-                        <div class="col-5"></div>
-                        <div class="col-2 text-center position-relative z-1">
-                            <span class="badge px-3 py-2">2025</span>
+                        <div class="col-5 text-end">
+                            <div class="cv-card ms-auto">
+                                <p class="cv-card-title">Ingeniería Industrial</p>
+                                <p class="cv-card-title">Bootcamp Fullstack Java</p>
+                                <span class="cv-badge">2026</span>
+                            </div>
                         </div>
-                        <div class="col-5 text-start">
-                        </div>
-                    </div>
-
-                    <!-- Row 8 -->
-                    <div class="row align-items-center mb-4">
-                        <div class="col-5">
-                            <p>Ingeniería industrial</p>
-                            <p>Bootcamp Fullstack Java</p>
-                        </div>
-                        <div class="col-2 text-center position-relative z-1">
-                            <span class="badge px-3 py-2">2026</span>
+                        <div class="col-2 text-center position-relative z-1 d-flex justify-content-center">
+                            <div class="timeline-dot active-dot"></div>
                         </div>
                         <div class="col-5 text-start"></div>
                     </div>
-                   </div> <!--container timeline-->
-                </div> <!--Cierre container cv-div-content-->            
+
+                </div> <!-- Cierre timeline-container -->
+            </div> <!-- Cierre cv-div-content -->            
         </section>
 
-        <section class="section-contact my-5">
+        <section class="section-contact py-5">
              <div class="container-fluid contact-div-main">
                 <h4 class="titulo-section" >Contacto</h4>
-                <div class="div-form">
-                    <form class="row g-3 formulario">
-                    <div class="col-md-6">
-                        <label for="inputName" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="inputName">
+                <div class="row g-4 align-items-center">
+                    <!-- Info Izquierda -->
+                     <div class="col-lg-7">
+                        <div class="contacto-card p-4 p-md-5">
+                        <form>
+                            <div class="input mb-3 text-start">
+                                <label class="form-label">Nombre</label>
+                                <input type="text" class="form-control" placeholder="Tu nombre">
+                            </div>
+                            <div class=" input mb-3 text-start">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control " placeholder="tu@email.com">
+                            </div>
+                            <div class="input mb-3 text-start">
+                            <label class="form-label ">Mensaje</label>
+                            <textarea class="form-control " rows="3" placeholder="Tu mensaje..."></textarea>
+                            </div>
+                            <div class="text-start">
+                            <button type="submit" class="btn px-4 py-2">Enviar mensaje</button>
+                            </div>
+                        </form>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail">
+                    <!--Info-->
+                    <div class="col-lg-5">
+                        <h3 class="fw-bold mb-3">¡Hablemos!</h3>
+                        <p class="mb-4">Estoy abierta a nuevas oportunidades como desarrolladora, proyectos colaborativos o consultas técnicas.</p>
+                        <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-envelope-fill me-3 fs-5"></i>
+                        <span>tuemail@ejemplo.com</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-linkedin me-3 fs-5""></i>
+                        <span>linkedin.com/in/tuperfil</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                        <i class="bi bi-github me-3 fs-5"></i>
+                        <span>github.com/tuusuario</span>
+                        </div>
                     </div>
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Mensaje</label>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Contactemos!</button>
-                    </div>
-                    </form>
-                </div> 
+        
+                </div>
              </div>
         </section>       
     </main>
