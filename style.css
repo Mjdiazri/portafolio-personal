@@ -87,13 +87,18 @@ header, .navbar-nav, .nav-link, .nav-link.show{
     margin-top: 20px;
     align-items: center;
     text-align: center;
-    gap: 5px;    
+    gap: 5px;   
 }
 
 .section-icon{
     font-size: 30px;
     margin-left: 30px;
     color: var(--colorDarkBlue);
+
+}
+
+.section-icon:hover{
+    text-shadow: 0 0 10px var(--colorGreen);
 }
 
     /*Imagenes*/
@@ -260,7 +265,7 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 }   
 
 
-.card-project .btn:hover {
+.card-project .btn:hover{
     background-color: white;
     color: var(--colorBlue);
 }
@@ -505,6 +510,10 @@ footer{
     .bi{
     color: var(--colorGreen);
     }
+
+    .bi:hover{
+        color: white;
+    }
 }
 
 .div-enlaces, .div-iconos, .div-creditos, .enlace-footer{
@@ -515,6 +524,10 @@ footer{
     flex-wrap: wrap;
     color: var(--colorGreen);
     text-decoration: none;
+}
+
+.foot-link:focus, .foot-link:hover{
+    color: var(--colorGreen);
 }
 
 .parrafo, .div-creditos{
