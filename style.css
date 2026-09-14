@@ -8,12 +8,22 @@
     --bs-navbar-active-color: white;
 }
 
+html{
+     scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', serif;
 }
+
+main{
+    position: relative;
+    width: 100%;
+}
+
 
 /*FONTS*/
 .titulo-main{
@@ -47,6 +57,21 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 
 .nav-link:focus, .nav-link:hover{
     color: white;
+}
+
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.img-logo-toggler {
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.navbar-toggler:hover .img-logo-toggler {
+    transform: scale(1.08); 
 }
 
 /*SECCIONES*/
@@ -102,17 +127,56 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 }
 
 .img-trasera{
-    transform: rotateY(180deg);    
+    transform: rotateY(180deg);   
+  
 }
 
 /*CONF SECCIONES SEGUNDARIAS*/
 
 .about-div-main, .projects-div-main, .cv-div-main, .contact-div-main{
     margin-top: 20px;
-    max-width: 70%;
+    width: 100%;
+    max-width: 850px;
     align-items: end;
     text-align:justify;
     gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+/*BTN subir */
+.btn-back-to-top {
+    position: sticky;
+    top: calc(100vh - 80px); 
+
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    width: 45px;
+    height: 45px;
+    background-color: var(--colorBlue);
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px var(--colorGreen);
+
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-back-to-top:hover {
+    background-color: var(--colorDarkBlue);
+    color: white;
+    transform: scale(1.1);
 }
 
 
@@ -138,14 +202,14 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 }
 
 .card-project{
-    
-    height: 100%;
-    margin-right: 70px;
-    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+    padding: 24px;
     background: rgba(255, 255, 255, 0.05);
     border: 1.5px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: 16px;
     color: white;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -153,6 +217,8 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 .card-project .card-body {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    padding: 0;
 }
 
 .card-project-footer {
@@ -177,18 +243,21 @@ header, .navbar-nav, .nav-link, .nav-link.show{
     font-size: 25px;
 }
 
+.project-buttons {
+    display: flex;
+    gap: 12px;
+}
+
 .card-project .btn {
     background-color: var(--colorGreen);
     color: white;
     border: none;
     border-radius: 20px; 
-    padding: 5px 18px;
+    padding: 6px 22px;
     font-size: 0.85rem;
     font-weight: 600;
-    margin-right: 5px;
     transition: background-color 0.2s ease;
 }   
-
 
 
 .card-project .btn:hover {
@@ -197,11 +266,12 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 }
 
 .proyect-one, .proyect-two, .proyect-three, .proyect-four{
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-color: rgba(255, 255, 255, 0.002);
     background-blend-mode: overlay; 
     background-color: var(--colorUltra);
-    background-size: 100%;
+    background-size: cover !important;
+    background-position: center !important;
      
     transition: background-color 0.3s ease; 
     cursor: pointer; 
@@ -451,7 +521,8 @@ footer{
     color: white;
 }
 
-@media (max-width: 767.98px) {
+
+@media (max-width: 991.98px) {
     .about-div-main, 
     .projects-div-main, 
     .cv-div-main, 
@@ -462,6 +533,10 @@ footer{
         padding: 0 15px;
     }
 
+    #img-nav{
+        display:none;
+    }
+
     .titulo-section {
         text-align: center !important;
         margin-left: 0 !important;
@@ -469,14 +544,15 @@ footer{
 
     .about-text {
         padding-right: 0 !important;
-        text-align: center;
+        text-align:justify;
     }
 
     .card-project {
-        margin-right: 0 !important;
+        margin-right: 0 !important;        
     }
 
-    .projects-tech{
+
+    .projects-tech, .project-buttons{
         justify-content: center !important;
     }
 
