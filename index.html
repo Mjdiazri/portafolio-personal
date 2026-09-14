@@ -313,31 +313,31 @@
                                     <h2 class="fw-bold display-6 mb-2">Contacto</h2>
                                     <p class="text-white-50 mb-4">¡Hablemos! Estoy disponible para nuevas oportunidades y proyectos.</p>
                                     <div class="d-flex gap-3 fs-4">
-                                        <a href="#" class="text-white opacity-75 opacity-100-hover"><i class="bi bi-linkedin"></i></a>
-                                        <a href="#" class="text-white opacity-75 opacity-100-hover"><i class="bi bi-github"></i></a>
-                                        <a href="#" class="text-white opacity-75 opacity-100-hover"><i class="bi bi-envelope-fill"></i></a>
+                                        <a href="https://www.linkedin.com/in/mjdiazri/" class="text-white opacity-75 opacity-100-hover" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                                        <a href="https://github.com/Mjdiazri" class="text-white opacity-75 opacity-100-hover" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                                        <a href="mailto:mjdiazri@gmail.com" class="text-white opacity-75 opacity-100-hover"><i class="bi bi-envelope-fill"></i></a>
                                     </div>
                                 </div>
 
                                 <!-- Formulario -->
                                 <div class="col-md-7">
-                                    <form>
+                                    <form action="https://formspree.io/f/meaqbpqn" method="POST">
                                         <div class="row g-3">
                                         <div class="col-md-6 text-start">
                                             <label class="form-label text-white small">Nombre *</label>
-                                            <input type="text" class="form-control glass-input" placeholder="Tu nombre">
+                                            <input type="text" class="form-control glass-input" name="name" placeholder="Tu nombre" required>
                                         </div>
                                         <div class="col-md-6 text-start">
                                             <label class="form-label text-white small">Email *</label>
-                                            <input type="email" class="form-control glass-input" placeholder="tu@email.com">
+                                            <input type="email" name="email" class="form-control glass-input" placeholder="tu@email.com" required>
                                         </div>
                                         <div class="col-12 text-start">
-                                            <label class="form-label text-white small">Asunto</label>
-                                            <input type="text" class="form-control glass-input" placeholder="Motivo de tu mensaje">
+                                            <label class="form-label text-white small">Asunto*</label>
+                                            <input type="text" name="subject" class="form-control glass-input" placeholder="Motivo de tu mensaje" required>
                                         </div>
                                         <div class="col-12 text-start">
                                             <label class="form-label text-white small">Mensaje *</label>
-                                            <textarea class="form-control glass-input" rows="3" placeholder="Escribe aquí..."></textarea>
+                                            <textarea name="message" class="form-control glass-input" rows="3" placeholder="Escribe aquí..." required></textarea>
                                         </div>
                                         <div class="col-12 text-end mt-4">
                                             <button type="submit" class="btn btn-glass-submit px-4 py-2">Enviar</button>
@@ -356,22 +356,20 @@
     </main>
     <footer>
         <div class="foot-div text-center p-3"> <!-- Inicio div iconos-->
-            <div class="div-iconos">
-                <a href="https://www.linkedin.com/in/mjdiazri/ " aria-label="Linkedin"><i class=" bi bi-linkedin section-icon"></i></a>
-                <a href=" enlace-footer https://github.com/Mjdiazri" aria-label="Github"><i class="bi bi-github section-icon"></i></a>
-                <a href="#" aria-label="Cv"><i class=" bi bi-file-earmark-person-fill section-icon"></i></a>
+            <div class="div-iconos mb-2">
+                <a href="https://www.linkedin.com/in/mjdiazri/" aria-label="Linkedin" target="_blank" rel="noopener noreferrer"><i class=" bi bi-linkedin section-icon"></i></a>
+                <a href="https://github.com/Mjdiazri" aria-label="Github" target="_blank" rel="noopener noreferrer"><i class="bi bi-github section-icon"></i></a>
+                <a href="./Doc/CV-Generation_Monica Diaz_v3.pdf" aria-label="Cv"><i class=" bi bi-file-earmark-person-fill section-icon" target="_blank" rel="noopener noreferrer"></i></a>
             </div>
                     
             <div class="div-enlaces">
-                <p><a class=" enlace-footer parrafo" href="#">Acerca de mí</a></p>
+                <p><a class=" enlace-footer parrafo" href="#about">Acerca de mí</a></p>
                 <p>|</p>
-                <p><a class=" enlace-footer parrafo" href="#">Proyectos</a></p>
+                <p><a class=" enlace-footer parrafo" href="#projects">Proyectos</a></p>
                 <p>|</p>
-                <p><a class=" enlace-footer parrafo" href="#">Curriculum</a></p>
+                <p><a class=" enlace-footer parrafo" href="#cv">Curriculum</a></p>
                 <p>|</p>
-                <p><a class="enlace-footer parrafo" href="#">Contacto</a></p>
-                <p>|</p>
-                <p><a class="enlace-footer parrafo" href="#">Skills</a></p>
+                <p><a class="enlace-footer parrafo" href="#contacts">Contacto</a></p>
             </div>
             <div class="div-creditos">
                 <p class="text-center m-0">Copyright @ 2026 Monica Jazmin Diaz  <span>||</span>      Desarrolladora Backend  <span>||</span>   Versión 1.0.0  Last update: Domingo 11 de septiembre 2026 </p>
