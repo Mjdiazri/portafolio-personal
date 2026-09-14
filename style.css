@@ -273,7 +273,7 @@ header, .navbar-nav, .nav-link, .nav-link.show{
     z-index: 0;
 }
 
-    /* Puntos línea */
+    
 .timeline-dot {
     width: 16px;
     height: 16px;
@@ -289,13 +289,13 @@ header, .navbar-nav, .nav-link, .nav-link.show{
     box-shadow: 0 0 10px rgba(37, 150, 190, 0.8);
 }
 
-    /* Puntos para año  */
+   
 .timeline-dot.active-dot {
     background-color: var(--colorGreen);
     box-shadow: 0 0 8px rgba(37, 150, 190, 0.6);
 }
 
-     /* Estilo de las Tarjetas */
+     
 .cv-card {
     background-color: var(--colorBlue); 
     border: 1px solid rgba(37, 150, 190, 0.2);
@@ -311,7 +311,7 @@ header, .navbar-nav, .nav-link, .nav-link.show{
     border-color: var(--colorGreen);
 }
 
-    /* Etiquetas del año */
+   
 .cv-badge {
     display: inline-block;
     color: var(--colorGreen);
@@ -320,7 +320,7 @@ header, .navbar-nav, .nav-link, .nav-link.show{
     margin-bottom: 4px;
 }
 
-    /* Textos dentro de la tarjeta */
+   
 .cv-card-title {
     color: white;
     font-size: 0.95rem;
@@ -378,17 +378,17 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 
 }
 
-/* Tarjeta de cristal transparente */
+    
 .glass-card {
-    background: rgba(11, 25, 44, 0.45); /* Azul muy oscuro semi-transparente */
+    background: rgba(11, 25, 44, 0.45); 
     backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px); /* Compatibilidad con Safari */
-    border: 1px solid rgba(255, 255, 255, 0.15); /* Borde sutil brillante */
+    -webkit-backdrop-filter: blur(16px); 
+    border: 1px solid rgba(255, 255, 255, 0.15); 
     border-radius: 16px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
-/* Campos de texto dentro de la tarjeta */
+  
 .glass-input {
     background-color: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -398,7 +398,7 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 
 .glass-input:focus {
     background-color: rgba(255, 255, 255, 0.15);
-    border-color: #2596be; /* Tu cian al enfocar */
+    border-color: #2596be; 
     color: #ffffff;
     box-shadow: 0 0 0 0.2rem rgba(37, 150, 190, 0.25);
 }
@@ -449,4 +449,44 @@ footer{
 
 .parrafo, .div-creditos{
     color: white;
+}
+
+@media (max-width: 767.98px) {
+    .about-div-main, 
+    .projects-div-main, 
+    .cv-div-main, 
+    .contact-div-main {
+        max-width: 100% !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 0 15px;
+    }
+
+    .titulo-section {
+        text-align: center !important;
+        margin-left: 0 !important;
+    }
+
+    .about-text {
+        padding-right: 0 !important;
+        text-align: center;
+    }
+
+    .card-project {
+        margin-right: 0 !important;
+    }
+
+    .projects-tech{
+        justify-content: center !important;
+    }
+
+    .cv-div-content, 
+    .timeline-container {
+        max-width: 100% !important;
+    }
+
+    .section-icon {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
