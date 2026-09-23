@@ -26,6 +26,8 @@ main{
 }
 
 
+/* -------------------------------------------------------------------------------------------------------------------------------------------*/
+
 /*FONTS*/
 .titulo-main{
     font-size: 60px;
@@ -37,7 +39,7 @@ main{
     -webkit-text-fill-color: transparent;
     color: transparent;
 
-    text-shadow: 0px 10px 120px #97e2fd;
+    -webkit-text-stroke: white 0.4px;
 }
 
 .titulo-secundario{
@@ -53,7 +55,17 @@ main{
     letter-spacing: 1px; 
 }
 
+/*BACKGROUND*/
+.aurora{
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+}
 
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*NAVBAR*/
 
@@ -63,14 +75,14 @@ main{
     align-items: center;
     justify-content: center;
     flex-wrap:nowrap;
-    height: 8%;
+    height: 7%;
     width: max-content;
 
     position: fixed;
-    top: 3.5rem;
+    top: 2rem;
     left: 50VW;
     transform: translateX(-50%);
-    z-index: 10;
+    z-index: 1;
 
     background: var(--colorDarkBlue);
 
@@ -81,6 +93,7 @@ main{
 header, .navbar-nav, .nav-link, .nav-link.show{
     color: white ;
     gap: 15px;
+    font-size: 14px;
 }
 
 #img-nav, .img-delantera{
@@ -90,6 +103,7 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 .nav-link:focus, .nav-link:hover{
     text-decoration: underline;
     color: #97e2fd;
+    text-shadow: 0 0 10px #97e2fd;
 }
 
 .navbar-toggler {
