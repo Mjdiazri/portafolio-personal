@@ -22,18 +22,28 @@ html{
 main{
     position: relative;
     width: 100%;
+    background-color: var(--colorDarkBlue);
 }
 
 
 /*FONTS*/
 .titulo-main{
-    font-weight: 1000;
-    color: var(--colorBlue);
+    font-size: 60px;
+    font-weight: 900;
+    background: linear-gradient(135deg,rgba(21, 25, 232, 1) 0%, rgba(37, 150, 190, 1) 35%, rgba(105, 18, 204, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    text-shadow: 0px 10px 120px #97e2fd;
 }
 
 .titulo-secundario{
+    font-size: 20px;
     font-weight: 600;
-    color: var(--colorDarkBlue);
+    color: white;
 }
 
 .titulo-section {
@@ -73,7 +83,7 @@ header, .navbar-nav, .nav-link, .nav-link.show{
     gap: 15px;
 }
 
-#img-nav, .img-delantera, .img-trasera{
+#img-nav, .img-delantera{
     border-radius: 50%;
 }
 
@@ -97,60 +107,60 @@ header, .navbar-nav, .nav-link, .nav-link.show{
     transform: scale(1.08); 
 }
 
+
 /*SECCIONES*/
 .intro-div-main, .about-div-main, .projects-div-main,.cv-div-main, .contact-div-main, .foot-div{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 /* SECCION 1 */
 .intro-div-main{
-    margin-top: 20px;
-    align-items: center;
-    text-align: center;
-    gap: 5px;
+    width: 100%;
     height: 100vh;
+
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    position: relative;  
 }
 
-.section-icon{
-    font-size: 30px;
-    margin-left: 30px;
-    color: var(--colorDarkBlue);
-
-}
-
-.section-icon:hover{
-    text-shadow: 0 0 10px var(--colorGreen);
-}
 
     /*Imagenes*/
 
 .div-imagenes{
-    position: relative;
-    width: 100%; 
-    max-width: 300px;
-    height:300px;
-    margin-top: 15px;
+    max-width: 270px;
+    height:270px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 85%);
+
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 85%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 85%);
 } 
 
 .card-img-top{
     width: 100%; 
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     object-fit: cover;
-    border: solid var(--colorBlue);
+    border: solid #97e2fd;
 }
 
-.img-trasera{
-    transform: rotateY(180deg);   
-  
+.div-intro-text{
+    margin-top: -4rem;
 }
+
+.section-icon{
+    font-size: 30px;
+    margin-left: 30px;
+    color: white;
+}
+
+.section-icon:hover{
+    text-shadow: 0 0 10px #97e2fd;
+}
+
+    
 
 /*CONF SECCIONES SEGUNDARIAS*/
 
@@ -179,7 +189,7 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 
     width: 45px;
     height: 45px;
-    background-color: var(--colorBlue);
+    background-color: var(--colorGreen);
     color: white;
     border-radius: 50%;
 
@@ -195,7 +205,7 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 }
 
 .btn-back-to-top:hover {
-    background-color: var(--colorDarkBlue);
+    background-color: var(--colorUltra);
     color: white;
     transform: scale(1.1);
 }
