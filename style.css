@@ -52,6 +52,8 @@ main{
     min-width: 1000px;
     overflow: hidden;
     transform: scale(0.6);
+    will-change: transform;
+    /*transform: translate3d(0, 0, 0);*/
 }
 
 .contenedor-ani{
@@ -60,15 +62,8 @@ main{
     height: 100dvh;
     inset: 0;
     margin: 0;
-     background: conic-gradient(
-        from 0deg at 50% 50%,
-        var(--colorDarkBlue) 0%,
-        rgb(7, 192, 177) 25%,
-        var(--colorUltra) 50%,
-        var(--colorGreen) 75%,
-        var(--colorDarkBlue) 100%
-    );
-    animation: spin 14s linear infinite;
+    background: conic-gradient(from 0deg at 50% 50%,var(--colorDarkBlue) 0%,rgb(7, 192, 177) 25%,var(--colorUltra) 50%,var(--colorGreen) 75%,var(--colorDarkBlue) 100%);
+    animation: spin 18s linear infinite;
 }
 
 @keyframes spin{
@@ -80,6 +75,28 @@ main{
         transform: rotate(1turn) scale(2);
     }
 
+}
+
+#title-phase{
+    width: 100%;
+    max-width:max-content;
+    overflow: hidden;
+    border-right:.15em solid var(--colorGreen);
+    margin: 0 auto;
+    white-space: nowrap;
+    animation: escribiendo 9.5s steps(41, end) forwards, cursor .9s step-end infinite;
+}
+
+@keyframes escribiendo{
+    from{width: 0}
+    to{width: 100%}
+}
+
+@keyframes cursor{
+    from, to{border-color: transparent;}
+    50%{
+        border-color: var(--colorGreen);
+    }
 }
 
 
@@ -171,8 +188,14 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 
 
 /*SECCIONES*/
+section{
+    border: solid orange 2px;
+    padding-top: 100px !important;
+}
+
 .intro-div-main, .about-div-main, .projects-div-main,.cv-div-main, .contact-div-main, .foot-div{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -183,7 +206,6 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 .intro-div-main{
     width: 100%;
     height: 100dvh;
-    flex-direction: column;
     text-align: center;
 }
 
