@@ -190,7 +190,8 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 /*SECCIONES*/
 section{
     border: solid orange 2px;
-    padding-top: 100px !important;
+    height: 100dvh;
+    scroll-margin-top: 80px; 
 }
 
 .intro-div-main, .about-div-main, .projects-div-main,.cv-div-main, .contact-div-main, .foot-div{
@@ -205,11 +206,9 @@ section{
 
 .intro-div-main{
     width: 100%;
-    height: 100dvh;
+    height: 100%;
     text-align: center;
 }
-
-    
 
     /*Contenido*/
 
