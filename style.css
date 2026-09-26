@@ -19,14 +19,70 @@ html{
     font-family: 'Nunito', serif;
 }
 
+body{
+    background-color: var(--colorDarkBlue);
+}
+
 main{
     position: relative;
     width: 100%;
-    background-color: var(--colorDarkBlue);
 }
 
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Animacion*/
+.contenedor-externo{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    margin: auto;
+    background-color:var(--colorDarkBlue);
+    filter: blur(100px);
+    opacity: 0.5;
+}
+
+.contenedor-interno{
+    border-radius: 99999px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 140vmax;
+    height: 140vmax;
+    min-width: 1000px;
+    overflow: hidden;
+    transform: scale(0.6);
+}
+
+.contenedor-ani{
+    position: absolute;
+    width:100dvw;
+    height: 100dvh;
+    inset: 0;
+    margin: 0;
+     background: conic-gradient(
+        from 0deg at 50% 50%,
+        var(--colorDarkBlue) 0%,
+        rgb(7, 192, 177) 25%,
+        var(--colorUltra) 50%,
+        var(--colorGreen) 75%,
+        var(--colorDarkBlue) 100%
+    );
+    animation: spin 14s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg) scale(2);
+    }
+
+    100%{
+        transform: rotate(1turn) scale(2);
+    }
+
+}
+
+
 
 /*FONTS*/
 .titulo-main{
@@ -126,7 +182,7 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 
 .intro-div-main{
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     flex-direction: column;
     text-align: center;
 }
@@ -185,7 +241,7 @@ header, .navbar-nav, .nav-link, .nav-link.show{
 /*BTN subir */
 .btn-back-to-top {
     position: sticky;
-    top: calc(100vh - 80px); 
+    top: calc(100dvh - 80px); 
 
     float: right;
     margin-right: 20px;
