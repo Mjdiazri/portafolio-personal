@@ -681,9 +681,15 @@ footer{
     }
 
     .intro-div-main{
-        min-height: calc(100dvh - 100px);
+        min-height: calc(100dvh - 10dvh);
         height: auto;
         justify-content: center;
+        padding: 40px 15px 20px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; 
     }
 
     .div-intro-text{
@@ -694,6 +700,32 @@ footer{
         gap: 30px;
     }
 
+      #title-phase {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 8px; 
+        border-right: none !important;
+        animation: none !important; 
+    }
+
+    .linea-1, .linea-2 {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        border-right: none !important; 
+    }
+
+    .linea-1 {
+        animation:escribiendo 4s steps(21, end) forwards !important ; 
+    }
+
+    .linea-2 {
+        animation:escribiendo 4s steps(19, end) 4s forwards !important ; 
+    }
+
+
     #img-nav{
         display:none;
     }
@@ -701,6 +733,10 @@ footer{
     .titulo-section {
         text-align: center !important;
         margin-left: 0 !important;
+    }
+
+    .section-about{
+        background-color: white;
     }
 
     .about-text {
