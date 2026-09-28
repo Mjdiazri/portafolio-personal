@@ -123,9 +123,11 @@ main{
 
 .titulo-section {
     font-weight: 800;
-    color: var(--colorGreen);
+    color: #39c1f3;
     text-transform: uppercase;
     letter-spacing: 1px; 
+    text-align: right;
+    align-self: flex-end;
 }
 
 
@@ -355,7 +357,7 @@ section{
     background-color: var(--colorUltra);
 
     .titulo-section{
-        color: white;
+        color: white;        
     }
 
 }
