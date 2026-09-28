@@ -318,10 +318,12 @@ section{
     align-items: center;
     height: 190px;
     width: 140px;
-    background-color: rgb(7, 54, 87);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(11, 25, 44, 0.55); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
-    box-shadow: -1rem 0 2rem #2595be29;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.4s ease, margin 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
     gap: 15px;
     color: white;
@@ -840,7 +842,6 @@ footer{
         scroll-snap-align: center;
         transition: transform 0.3s ease, z-index 0.3s ease, border-color 0.3s ease;
         
-       
         view-timeline-name: --card-scroll;
         view-timeline-axis: inline;
         animation: auto-scale-card linear both;
