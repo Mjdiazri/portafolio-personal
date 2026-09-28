@@ -479,7 +479,7 @@ section{
     position: relative;
 
     .titulo-secundario{
-        color: var(--colorUltra);
+        color: white;
         font-weight: 700;
     }
 
@@ -526,8 +526,8 @@ section{
 }
 
 .cv-card {
-    background-color: var(--colorBlue); 
-    border: 1px solid rgba(37, 150, 190, 0.2);
+    /*background-color: rgb(7, 54, 87);*/
+    border: 2px solid rgba(90, 184, 218, 0.861);
     border-radius: 8px;
     padding: 12px 16px;
     max-width: 320px;
@@ -537,7 +537,16 @@ section{
 
 .cv-card:hover {
     transform: translateY(-2px);
-    border-color: var(--colorGreen);
+    border-color: 1px white;
+    background-color: var(--colorGreen);
+
+    .cv-card-title{
+        color: white;
+    }
+
+    .cv-badge{
+        color:var(--colorDarkBlue)
+    }
 }
 
 .cv-badge {
