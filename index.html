@@ -52,15 +52,18 @@
                 <i class="fa-solid fa-chevron-up"></i>
             </a>
             
-        <section class="section-intro">
+        <section class="section-intro position-relative">
             <!-- Inicio contenedor section intro-->
-            <div class="container-fluid intro-div-main">
+            <div class="container-fluid intro-div-main p-0">
                 <div class="div-imagenes">
                     <img src="./img/foto.jpg" class=" img-delantera card-img-top" alt="foto-developer">
                 </div>
                 <div class="div-intro-text">
                     <h1 class="titulo-main">Fullstack Developer</h1>
-                    <h5 class="titulo-secundario" id="title-phase">Desarrollo, soluciono, aprendo y optimizo </h5>
+                    <h5 class="titulo-secundario" id="title-phase">
+                        <span class="linea-1">Desarrollo, soluciono, </span>
+                        <span class="linea-2">aprendo y optimizo.</span> 
+                    </h5>
                     <div class="intro-div-link mt-3"> <!-- Inicio div iconos-->
                         <a href="https://www.linkedin.com/in/mjdiazri/ " aria-label="Linkedin" target="_blank" rel="noopener noreferrer">
                             <i class="bi bi-linkedin section-icon"></i></a>
@@ -73,16 +76,41 @@
         </section>
 
         <section class="section-about my-4" id="about">
-            <div class="container-fluid about-div-main">
-                <div class="row justify-content-end">
+            <div class="container">
+                <div class="row justify-content-center">
                     <div class="col-12 col-md-10">
-                        <h4 class="titulo-section text-end mb-4">Acerca de mí</h4> 
-                        <p class="about-text">
-                        Soy desarrolladora Java en formación con experiencia en proyectos enfocados en la optimización de procesos logísticos mediante tecnología. Me apasiona el desarrollo de software y la creación de aplicaciones eficientes. Actualmente busco oportunidades para aplicar mis conocimientos, aportar valor y seguir creciendo en el desarrollo de soluciones tecnológicas.
-                        </p>
-                    </div>
-                </div>
-            </div>
+                        <div class="glass-card p-4 p-md-5">
+                            <h4 class="titulo-section text-end mb-4">Acerca de mí</h4> 
+                            <p class="about-text">
+                                Soy desarrolladora Java en formación con experiencia en proyectos enfocados en la optimización de procesos logísticos mediante tecnología. Me apasiona el desarrollo de software y la creación de aplicaciones eficientes. Actualmente busco oportunidades para aplicar mis conocimientos, aportar valor y seguir creciendo en el desarrollo de soluciones tecnológicas.
+                            </p>
+                            <div class="container div-skill">
+                                <div class="card card-skill">
+                                    <i class="fa-brands fa-square-js"></i>
+                                    <h5>JavaScript</h5>
+                                </div>
+                                <div class="card card-skill">
+                                     <i class="fa-brands fa-java"></i>
+                                     <h5>Java</h5>
+                                </div>
+                                <div class="card card-skill">
+                                    <i class="fa-brands fa-css"></i>
+                                    <h5>Css</h5>
+                                </div>
+                                <div class="card card-skill">
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                    <h5>Bootstrap</h5>
+                                </div>
+                                <div class="card card-skill">
+                                    <i class="fa-brands fa-github"></i>
+                                    <h5>Github</h5>
+                                </div>
+                            </div>
+
+                        </div><!--Cierre glass card-->
+                    </div><!--Cierre col-->
+                </div><!--Cierre row-->
+            </div><!--Cierre container-->
         </section>
 
         <section class="section-projects p-3" id="projects">
